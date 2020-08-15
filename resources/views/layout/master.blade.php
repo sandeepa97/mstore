@@ -183,29 +183,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Dashboard
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            {{-- <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Active Page</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inactive Page</p>
-                </a>
-              </li>
-            </ul> --}}
-          </li>
+
           <li class="nav-item has-treeview menu-open">
             <a href="#" class="nav-link ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -221,13 +199,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <p>Users List</p>
                 </a>
               </li>
-
             </ul>
+            </li>
           <li class="nav-item has-treeview menu-open">
             <a href="#" class="nav-link ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Inquiry Management
+                Item Management
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -235,7 +213,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li class="nav-item">
               <a href="{{url('admin/inquiry')}}" class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Inquiries List</p>
+                  <p>Item List</p>
+                </a>
+              </li>
+              <li class="nav-item">
+              <a href="{{url('admin/customer')}}" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Agent List</p>
                 </a>
               </li>
 
@@ -246,7 +230,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#" class="nav-link ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Customer Management
+                Stock Management
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -254,7 +238,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li class="nav-item">
               <a href="{{url('admin/customer')}}" class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Customer List</p>
+                  <p>Stock List</p>
+                </a>
+              </li>
+              <li class="nav-item">
+              <a href="{{url('admin/customer')}}" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add Stock</p>
+                </a>
+              </li>
+              <li class="nav-item">
+              <a href="{{url('admin/customer')}}" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Remove Stock</p>
                 </a>
               </li>
 
@@ -264,7 +260,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#" class="nav-link ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Quotation Management
+                Cheque Management
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -272,39 +268,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li class="nav-item">
               <a href="{{url('admin/quotation')}}" class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Quotation List</p>
+                  <p>Cheque List</p>
                 </a>
               </li>
 
             </ul>
           </li>
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link ">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Invoice Management
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-              <a href="{{url('admin/invoice')}}" class="nav-link ">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Invoice List</p>
-                </a>
-              </li>
-
-            </ul>
-          </li>
-          {{-- <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Simple Link
-                <span class="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li> --}}
+         
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -344,10 +314,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <footer class="main-footer">
     <!-- To the right -->
     <div class="float-right d-none d-sm-inline">
-      Anything you want
+      System by &copy; <a href="www.sandeepa.net">DEEP97</a>
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Moksha Stores, Moratuwa. 2020</strong>. All rights reserved.
   </footer>
 </div>
 <!-- ./wrapper -->
